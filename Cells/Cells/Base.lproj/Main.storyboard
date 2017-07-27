@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jm8-wo-Gu0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IoV-5h-Jf6">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="220" width="375" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProfileTopEmojiContainerCell" rowHeight="140" id="rHO-JC-dW5" customClass="ProfileTopEmojiContainerCell" customModule="Cells" customModuleProvider="target">
@@ -198,13 +198,39 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-dD-WNE">
+                                <rect key="frame" x="16" y="150" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4ah-oq-KrB"/>
+                                    <constraint firstAttribute="width" constant="46" id="ODU-0O-wIF"/>
+                                </constraints>
+                                <state key="normal" title="show"/>
+                                <connections>
+                                    <action selector="showError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hjn-xx-s0L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfV-8e-M5h">
+                                <rect key="frame" x="322" y="150" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EEd-5r-9Wb"/>
+                                    <constraint firstAttribute="width" constant="46" id="NHr-eu-aiK"/>
+                                </constraints>
+                                <state key="normal" title="hide"/>
+                                <connections>
+                                    <action selector="hideError:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ima-oa-mdr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DDh-dD-WNE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="059-8I-3fJ"/>
+                            <constraint firstItem="FfV-8e-M5h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="8Eb-j0-0K3"/>
                             <constraint firstAttribute="trailing" secondItem="IoV-5h-Jf6" secondAttribute="trailing" id="AMf-sc-Ber"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IoV-5h-Jf6" secondAttribute="bottom" id="Hxf-Cu-gfZ"/>
-                            <constraint firstItem="IoV-5h-Jf6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="StH-xT-VRT"/>
+                            <constraint firstItem="DDh-dD-WNE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="OTQ-Mo-lWg"/>
+                            <constraint firstItem="IoV-5h-Jf6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="StH-xT-VRT"/>
                             <constraint firstItem="IoV-5h-Jf6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="foB-OH-MJM"/>
+                            <constraint firstAttribute="trailing" secondItem="FfV-8e-M5h" secondAttribute="trailing" constant="7" id="ojO-Gh-H4M"/>
                         </constraints>
                     </view>
                     <connections>
@@ -214,6 +240,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-151" y="85"/>
+        </scene>
+        <!--Text EntryVC-->
+        <scene sceneID="HJ5-Yo-aak">
+            <objects>
+                <viewController id="jm8-wo-Gu0" customClass="TextEntryVC" customModule="Cells" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4OR-y8-H6D"/>
+                        <viewControllerLayoutGuide type="bottom" id="WCl-hj-iPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PR9-jm-aaX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Uf-gY-whJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154" y="724"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         prTableView.tableFooterView = v
         prTableView.delegate = self
         prTableView.dataSource = self
+        
+        
     }
     func setupDS() {
         let emojiData = EmojiCell.init(emojiImage: UIImage())
@@ -108,6 +110,12 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func hideError(_ sender: Any) {
+//        csEntry.hideError()
+    }
+    @IBAction func showError(_ sender: Any) {
+//        csEntry.showErrorWith(title: "This is not a valid phone number")
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
