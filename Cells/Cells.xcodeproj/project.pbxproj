@@ -13,6 +13,7 @@
 		7C78B9C01F28051200934923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C78B9BF1F28051200934923 /* Assets.xcassets */; };
 		7C78B9C31F28051200934923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C78B9C11F28051200934923 /* LaunchScreen.storyboard */; };
 		7C9241491F29648E002B1AAD /* TextEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9241481F29648E002B1AAD /* TextEntryVC.swift */; };
+		7C92414B1F298F16002B1AAD /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C92414A1F298F16002B1AAD /* NotificationViewController.swift */; };
 		7CC996AB1F2959820059A193 /* CustomTextViewEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC996AA1F2959820059A193 /* CustomTextViewEntry.swift */; };
 		D35D6353EFCCE9F442FD68DB /* Pods_Cells.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34AC597F58D29FEE357DD57B /* Pods_Cells.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		7C78B9C21F28051200934923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C78B9C41F28051200934923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C9241481F29648E002B1AAD /* TextEntryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextEntryVC.swift; sourceTree = "<group>"; };
+		7C92414A1F298F16002B1AAD /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		7CC996AA1F2959820059A193 /* CustomTextViewEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextViewEntry.swift; sourceTree = "<group>"; };
 		AD71FF3DF60AFF2BD99D9BDE /* Pods-Cells.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cells.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cells/Pods-Cells.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				7CC996AA1F2959820059A193 /* CustomTextViewEntry.swift */,
 				7C78B9BA1F28051200934923 /* ViewController.swift */,
 				7C9241481F29648E002B1AAD /* TextEntryVC.swift */,
+				7C92414A1F298F16002B1AAD /* NotificationViewController.swift */,
 				7C78B9BC1F28051200934923 /* Main.storyboard */,
 				7C78B9BF1F28051200934923 /* Assets.xcassets */,
 				7C78B9C11F28051200934923 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C92414B1F298F16002B1AAD /* NotificationViewController.swift in Sources */,
 				7C9241491F29648E002B1AAD /* TextEntryVC.swift in Sources */,
 				7C78B9BB1F28051200934923 /* ViewController.swift in Sources */,
 				7C78B9B91F28051200934923 /* AppDelegate.swift in Sources */,
